@@ -23,9 +23,9 @@ const Navbar = () => {
               src={logo}
               alt="Commerce.js"
               height="25px"
-              className={classes.img}
-            />
-            Greg's React Shop
+              className={classes.img} 
+            /> 
+              Greg's React Shop
           </Typography>
           <div className={classes.grow} />
           <div className={classes.button}>
