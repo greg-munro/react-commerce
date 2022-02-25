@@ -16,10 +16,12 @@ const Product = ({ product }) => {
 
   return (
     <Card className={classes.root}>
-      <CardMedia
+      <img
         className={classes.media}
-        image={product.image.url}
+        src={product.image.url}
         title={product.name}
+        alt={product.name}
+        height="200px"
       />
       <CardContent>
         <div className={classes.cardContent}>
