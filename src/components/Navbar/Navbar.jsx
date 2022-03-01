@@ -12,7 +12,7 @@ import { ShoppingCart } from "@material-ui/icons";
 import logo from "../../assets/commercelogo.png";
 import useStyles from "./styles";
 
-const Navbar = () => {
+const Navbar = ({ totalItems }) => {
   const classes = useStyles();
   return (
     <>
@@ -23,14 +23,14 @@ const Navbar = () => {
               src={logo}
               alt="Commerce.js"
               height="25px"
-              className={classes.img} 
+              className={classes.img}
             />
-              React Food Workshops
+            React Food Workshops
           </Typography>
           <div className={classes.grow} />
           <div className={classes.button}>
             <IconButton aria-label="Show cart items" color="inherit">
-              <Badge badgeContent={2} color="secondary">
+              <Badge badgeContent={totalItems} color="secondary">
                 <ShoppingCart />
               </Badge>
             </IconButton>
