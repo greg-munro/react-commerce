@@ -25,7 +25,7 @@ const Navbar = ({ totalItems }) => {
               height="25px"
               className={classes.img}
             />
-            React Food Workshops
+            Talleres Food Barcelona
           </Typography>
           <div className={classes.grow} />
           <div className={classes.button}>
