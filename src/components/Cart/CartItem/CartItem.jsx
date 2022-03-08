@@ -5,6 +5,7 @@ import {
   Card,
   CardActions,
   CardContent,
+  CardMedia
 } from "@material-ui/core";
 
 import useStyles from "./styles";
@@ -14,7 +15,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
 
   return (
     <Card>
-      <img src={item.image.url} alt={item.name} className={classes.media} />
+      <CardMedia src={item.image.url} component="img" alt={item.name} className={classes.media} />
       <CardContent className={classes.cardContent}>
         <Typography variant="h4">{item.name}</Typography>
         <Typography variant="h5">

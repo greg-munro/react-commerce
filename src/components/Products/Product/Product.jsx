@@ -16,12 +16,12 @@ const Product = ({ product, onAddToCart }) => {
 
   return (
     <Card className={classes.root}>
-      <img
+      <CardMedia
         className={classes.media}
         src={product.image.url}
+        component="img"
         title={product.name}
         alt={product.name}
-        height="200px"
       />
       <CardContent>
         <div className={classes.cardContent}>
