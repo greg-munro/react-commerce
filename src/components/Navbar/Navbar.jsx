@@ -34,7 +34,7 @@ const Navbar = ({ totalItems }) => {
               height="25px"
               className={classes.img}
             />
-            Talleres Food Barcelona
+            Food Talleres Barcelona
           </Typography>
           <div className={classes.grow} />
           {location.pathname === "/" && (
