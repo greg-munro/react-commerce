@@ -15,7 +15,7 @@ const Cart = ({
   const EmptyCart = () => (
     <Typography variant="subtitle1">
       <Link to="/" className={classes.link}>
-        Start adding some...
+        Your cart is empty, click here to add a class :)
       </Link>
     </Typography>
   );
