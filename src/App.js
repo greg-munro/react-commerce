@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
 import { Products, Navbar, Cart, Checkout } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CardTravelRounded } from "@material-ui/icons";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -73,7 +74,7 @@ const App = () => {
               />
             }
           />
-          <Route exact path="/checkout" element={<Checkout />} />
+          <Route exact path="/checkout" element={<Checkout cart={cart} />} />
         </Routes>
       </div>
     </Router>
