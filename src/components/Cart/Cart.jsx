@@ -34,13 +34,13 @@ const Cart = ({
         ))}
       </Grid>
       <div className={classes.cardDetails}>
-        <Typography variant="h4">
+        <Typography variant="h5">
           Subtotal: {cart.subtotal.formatted_with_symbol}
         </Typography>
         <div>
           <Button
             className={classes.emptyButton}
-            size="large"
+            size="medium"
             type="button"
             variant="contained"
             color="secondary"
@@ -52,7 +52,7 @@ const Cart = ({
             component={Link}
             to="/checkout"
             className={classes.checkoutButton}
-            size="large"
+            size="medium"
             type="button"
             variant="contained"
             color="primary"
@@ -69,7 +69,7 @@ const Cart = ({
   return (
     <Container>
       <div className={classes.toolbar} />
-      <Typography className={classes.title} variant="h4" gutterBottom>
+      <Typography className={classes.title} variant="h5" gutterBottom>
         Your Shopping Cart
       </Typography>
       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}

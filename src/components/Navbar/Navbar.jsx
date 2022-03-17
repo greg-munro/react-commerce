@@ -31,9 +31,9 @@ const Navbar = ({ totalItems }) => {
             <img
               src={logo}
               alt="Commerce.js"
-              height="25px"
+              height="20px"
               className={classes.img}
-            />
+            /> 
             Food Talleres Barcelona
           </Typography>
           <div className={classes.grow} />
